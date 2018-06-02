@@ -21,6 +21,8 @@
     <!--Input row for upcoming bill or payment, date, budget category.  Will allow for creation of custom fields and then populate a dropdown menu for future use-->
     <!--table displaying added bills or payments, date, budget category.  Will calculate current amount of money available, upcoming additions and deletions and budget projections, and will display current available cash on hand after taking into account upcoming expenses and budgeting as well-->
     <!-- this will be handled by mysql!-->
+    <!--allow users to input budget categories and set limits/amounts per category (and diplay categories/amounts in pie chart)-->
+    <!--display actual amounts in pie chart and be able to compare to the budget pie chart-->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <a class="navbar-brand" href="#">Budget Master</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -36,12 +38,15 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
+                    <a class="nav-link" href="budgetCreator.html">Create a Budget</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="budget.html">Budget Breakdown</a>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
                         aria-expanded="false">
-                        Dropdown
+                        Settings
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                         <a class="dropdown-item" href="#">Settings</a>
@@ -49,9 +54,6 @@
                         <div class="dropdown-divider"></div>
                         <a class="dropdown-item" href="#">Log Out</a>
                     </div>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link disabled" href="#">FAQ</a>
                 </li>
             </ul>
             <form class="form-inline my-2 my-lg-0">
