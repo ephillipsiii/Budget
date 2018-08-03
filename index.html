@@ -24,52 +24,56 @@
     <!--allow users to input budget categories and set limits/amounts per category (and diplay categories/amounts in pie chart)-->
     <!--display actual amounts in pie chart and be able to compare to the budget pie chart-->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">Budget Master</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-            aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+        <div class="container">
+            <a class="navbar-brand" href="#">Budget Master</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Home
-                        <span class="sr-only">(current)</span>
-                    </a>
-                </li>
-                <li class="nav-item active">
-                    <a class="nav-link" href="app/public/newsScrapper.html">Master your Finances</a>
-                </li>
-                <li class="nav-item active">
-                    <a class="nav-link" href="app/public/budgetCreator.html">Create a Budget</a>
-                </li>
-                <li class="nav-item active">
-                    <a class="nav-link disabled" href="app/public/budget.html">Budget Breakdown</a>
-                </li>
-                <li class="nav-item dropdown active">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
-                        aria-expanded="false">
-                        Settings
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">Settings</a>
-                        <a class="dropdown-item" href="#">Change Accounts</a>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#">Log Out</a>
-                    </div>
-                </li>
-            </ul>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home
+                            <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="app/public/newsScrapper.html">Master your Finances</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="app/public/budgetCreator.html">Create a Budget</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link disabled" href="app/public/budget.html">Budget Breakdown</a>
+                    </li>
+                    <li class="nav-item dropdown active">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false">
+                            Settings
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Settings</a>
+                            <a class="dropdown-item" href="#">Change Accounts</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Log Out</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
         </div>
     </nav>
 
     <div class="jumbotron">
-        <h1 class="display-4">Budget Master</h1>
-        <p class="lead">An easy to use tool for managing personal finances with the end goal of creating budgets that work.</p>
-        <hr class="my-4">
-        <p>This will show you exactly how much cash you have left over after all budgetary concerns are met!</p>
-        <p class="lead">
-            <a class="btn btn-primary btn-lg" href="#" role="button">Learn more!</a>
-        </p>
+        <div class="container">
+            <h1 class="display-4">Budget Master</h1>
+            <p class="lead">An easy to use tool for managing personal finances with the end goal of creating budgets that work.</p>
+            <hr class="my-4">
+            <p>This will show you exactly how much cash you have left over after all budgetary concerns are met!</p>
+            <p class="lead">
+                <a class="btn btn-primary btn-lg" href="#" role="button">Learn more!</a>
+            </p>
+        </div>
     </div>
 
     <div class="container">
@@ -103,36 +107,38 @@
     </div>
 
     <!--figure out a way to fill with MySQL-->
-    <table class="table table-bordered table-hover table-dark">
-        <thead>
-            <tr>
-                <th scope="col">Date Occuring</th>
-                <th scope="col">Bill or Payment</th>
-                <th scope="col">Budget Category</th>
-                <th scope="col">Amount</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <th scope="row">5-1-18</th>
-                <td>Mortgage</td>
-                <td>Housing</td>
-                <td>$3333</td>
-            </tr>
-            <tr>
-                <th scope="row">5-1-18</th>
-                <td>HOA Fees</td>
-                <td>Housing</td>
-                <td>$3333</td>
-            </tr>
-            <tr>
-                <th scope="row">5-5-18</th>
-                <td>Car Payment</td>
-                <td>Transportation</td>
-                <td>$333</td>
-            </tr>
-        </tbody>
-    </table>
+    <div class="container">
+        <table class="table table-bordered table-hover table-dark">
+            <thead>
+                <tr>
+                    <th scope="col">Date Occuring</th>
+                    <th scope="col">Bill or Payment</th>
+                    <th scope="col">Budget Category</th>
+                    <th scope="col">Amount</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">5-1-18</th>
+                    <td>Mortgage</td>
+                    <td>Housing</td>
+                    <td>$3333</td>
+                </tr>
+                <tr>
+                    <th scope="row">5-1-18</th>
+                    <td>HOA Fees</td>
+                    <td>Housing</td>
+                    <td>$3333</td>
+                </tr>
+                <tr>
+                    <th scope="row">5-5-18</th>
+                    <td>Car Payment</td>
+                    <td>Transportation</td>
+                    <td>$333</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
 
 </body>
 
